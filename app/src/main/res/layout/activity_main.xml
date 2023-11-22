@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textColor="#009688"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/textViewFirst"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter first number"
+        android:textSize="20dp"
+        android:textColor="#E91E63"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/editTextFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@id/textViewFirst"
+        android:hint="enter number"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        tools:ignore="DuplicateSpeakableTextCheck"
+        />
+
+    <TextView
+        android:id="@+id/textViewSecond"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textViewFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter second number"
+        android:textSize="20dp"
+        android:textColor="#E91E63"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextFirst"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@id/textViewFirst"
+        android:hint="first_number"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63" />
+
+    <TextView
+        android:id="@+id/textViewAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSecond"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:text="Answer"
+        android:textColor="#00BCD4"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer"
+        android:layout_marginTop="21dp"
+        android:text="+"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/btnAdd"
+        android:text="-"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnMul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/btnSub"
+        android:text="X"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSub"
+        android:layout_marginStart="-100dp"
+        android:layout_marginTop="58dp"
+        android:layout_toEndOf="@+id/btnSub"
+        android:text="/"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>
